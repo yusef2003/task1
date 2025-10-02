@@ -1,0 +1,21 @@
+﻿ double pricePerSmall = 25.0;
+ double pricePerLarge = 35.0;
+ double taxRate = 0.06;
+Console.Write("Enter number of small carpets: ");
+int smallRooms = Convert.ToInt32(Console.ReadLine());
+Console.Write("Enter number of large carpets: ");
+int largeRooms = Convert.ToInt32(Console.ReadLine());
+double cost = (smallRooms * pricePerSmall) + (largeRooms * pricePerLarge);
+double tax = cost * taxRate;
+double total = cost + tax;
+Console.WriteLine("\nEstimate for carpet cleaning service");
+Console.WriteLine($"Number of small carpets: {smallRooms}");
+Console.WriteLine($"Number of large carpets: {largeRooms}");
+Console.WriteLine($"Price per small carpet: ${pricePerSmall}");
+Console.WriteLine($"Price per large carpet: ${pricePerLarge}");
+Console.WriteLine($"Cost: ${cost}");
+Console.WriteLine($"Tax: ${tax}");
+Console.WriteLine("===============================");
+Console.WriteLine($"Total estimate: ${total}");
+Console.WriteLine("This estimate is valid for 30 days");
+
